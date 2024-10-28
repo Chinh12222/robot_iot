@@ -21,3 +21,5 @@ jobs:
         working-directory: /www/wwwroot/ohappy.btecit.tech
     steps:
     - uses: actions/checkout@v4
+    - name: Copy source
+      run: cp -r /home/ohappy/actions-runner/_work/robot_iot /www/wwwroot/ohappy.btecit.tech
